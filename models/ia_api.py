@@ -44,13 +44,12 @@ palavras_chave_improdutivo = ['obrigado', 'obrigada', 'agradecimentos', 'agrade�
 'especial', 'conquistas', 'conquistou', 'celebra', 'parabéns', 'parabens', 'realizações', 'cativa', 'enoja'
 'enjoa', 'abençoe', 'harmonia', 'paz', 'encanto', 'encantamento', 'valorosas', 'valorizar', 'emoções',
  'comemorar', 'comemorações', 'festejar', 'amizade', 'fugir', 'ódio', 'falso', 'falsa', 'risos',
- 'puto', 'puta', 'arrombado', 'viver', 'frieza', 'covardia', 'covarde', 'dor', 'raivoso',
- 'rancoroso', 'rancorosa', 'cicatriz', 'cicatrizes', 'terror', 'abalada', 'natal', 'pascoa', 'páscoa',
- 'graças', 'cinzas', 'crianças', 'feriado', 'tiradentes', 'feriados', 'finados', 'corpus', 'christi',
- 'divertido', 'divertidissimo', 'divertidíssimo', 'diversão', 'inimigo', 'inimigos', 'carnaval',
+ 'viver', 'frieza', 'covardia', 'covarde', 'dor', 'raivoso','rancoroso', 'rancorosa', 'cicatriz',
+ 'cicatrizes', 'terror', 'abalada', 'natal', 'pascoa', 'páscoa', 'graças', 'cinzas', 'crianças', 
+ 'feriado', 'tiradentes', 'feriados', 'finados', 'corpus', 'christi', 'divertido', 
+ 'divertidissimo', 'divertidíssimo', 'diversão', 'inimigo', 'inimigos', 'carnaval',
  'folia', 'sacanagem', 'doente', 'doença', 'tristeza', 'tristesa', 'riso', 'raiva','rancor',
- 'cacete', 'caralho', 'arrombar', 'arrombada', 'esporro','ignorante',
- 'insensível', 'apaixonada', 'apaixonado', 'paixão']
+ 'ignorante', 'insensível', 'apaixonada', 'apaixonado', 'paixão']
 
 def classificar_por_palavras_chaves(texto):
     texto_tokens = texto.split()
@@ -97,3 +96,4 @@ def chamar_api_ia(texto):
     except Exception as e:
         print("Erro na chamada da API externa", e)
         return mensagem_local
+
