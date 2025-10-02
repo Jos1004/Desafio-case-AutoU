@@ -1,6 +1,6 @@
 # Desafio-case-AutoU
 
-Objetivo desse código é simplicaficar a leitura de textos de emails os classificando em produtivo e improdutivo, isso realizado através da API do Hugging Face e fazendo o uso também de um algoritmo que basease em um conjuto de palavras chaves para ajudar a determinar o resultado.
+Objetivo desse código é simplicaficar a leitura de textos de e-mails os classificando em produtivo e improdutivo, isso realizado através da API do Hugging Face e fazendo o uso também de um algoritmo que basease em um conjuto de palavras chaves para ajudar a determinar o resultado.
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
