@@ -7,6 +7,7 @@ Objetivo desse código é simplicaficar a leitura de textos de e-mails os classi
 o link para o deploy (foi utilizado render): https://desafio-case-autou.onrender.com/
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 Para executar o repositório em um localhost, primeiro faça o download do repositório e instale as dependências tudo de uma vez no arquivo requirements.txt 
 Os principais pacotes usados neste projeto são:
 
