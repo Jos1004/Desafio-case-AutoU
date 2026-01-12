@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -65,4 +66,73 @@
          console.log(mensagem);
      </script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Case AutoU</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+      <div class="card">
+         <div class="image"></div>
+          <div id="container">
+              {% if mensagem %}
+               <div id="mensagem-classificacao" class="{{ status }}">
+                   {{ mensagem }}
+               </div>
+              {% endif %}
+           <form method="POST" action="/processar" enctype="multipart/form-data" id="form">
+             <h1>Faça Verificação de E-mails:</h1>
+             <label class="card-text" id="ct" for="text">Insira o texto do e-mail:
+                <textarea id="text" name="text"></textarea>
+             </label>
+             <p class="card-text">OU</p>
+             <label class="card-text" for="files">Upload do arquivo:
+               <div class="uploads">
+                   <img src="{{ url_for('static', filename='images/file_plus.svg') }}" alt="File">
+                   <input type="file" name="file" id="files" accept=".pdf,.txt"/>
+               </div>
+             </label>
+             <div id="hr">
+               <input type="submit" value="Enviar" id="enviar">
+             </div>
+           </form>
+           </div>
+        </div>
+     </div>
+     <script>
+          const textarea = document.getElementById('text');
+          const upload = document.getElementById('files');
+
+          function atualizarCampos() {
+              if (textarea.value.trim().length > 0) {
+                  upload.disabled = true;  // Bloqueia o upload se textarea tiver texto
+              } else {
+                  upload.disabled = false; // Libera o upload se textarea estiver vazio
+              }
+
+              if (upload.files.length > 0) {
+                  textarea.disabled = true;  // Bloqueia textarea se arquivo selecionado
+              } else {
+                  textarea.disabled = false; // Libera textarea se nenhum arquivo selecionado
+              }
+          }
+
+          // Adiciona listeners e chama função para estado inicial correto
+          textarea.addEventListener('input', atualizarCampos);
+          upload.addEventListener('change', atualizarCampos);
+          atualizarCampos();
+
+         const mensagem = "{{ mensagem|safe }}";
+         console.log(mensagem);
+     </script>
+</body>
+>>>>>>> 26083729d0f88f0d7f090bbf38dc4d53468d0fdf
 </html>

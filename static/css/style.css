@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html, body{
     height: 100%;
     margin: 0;
@@ -228,4 +229,236 @@ p{
         height: 50px;
         text-align: center;
     }
+=======
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    background: #E8E3DB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.card{
+    width: 800px;
+    height: 542px;
+    background-color: #ffffff;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 15px;
+    box-shadow: 0 13px 8px rgba(0,0,0,25%);
+    gap: 80px;
+}
+
+.image{
+    background-image: url("../images/Whisk_428c1e0cc8c3c5c86bb449b02bb0efa1dr.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 522px;
+    width: 360px;
+    margin: 0;
+    margin-left: 10px;
+    border-radius: 15px;
+    box-shadow: inset 0 154px 50px rgba(125,108,108,46%);
+}
+
+form{
+    display: flex;
+    flex-flow: column wrap;
+    height: 450px;
+    width: 310px;
+    margin: 12px 0 0 0;
+    transform: translateY(48px);
+    gap:30px;
+}
+
+#container{
+     width: 311px;
+     height: 530px;
+}
+
+h1{
+   font-size: 30px;
+   margin: 5px 0 0 0;
+   font-family: "Red Hat Display", sans-serif;
+   font-weight: 900;
+   width: 250px;
+}
+
+.card-text{
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 12.5px;
+    text-indent: 5px;
+    margin:0;
+}
+
+#text{
+    border: 0.3px solid #727070;
+    height: 75px;
+    width: 300px;
+    border-radius: 8px;
+    margin: 5px 0 0 0;
+}
+
+.uploads{
+    border: 1.5px dashed #252222;
+    height: 73px;
+    width: 303px;
+    margin: 5px 0 0 0;
+    border-radius: 8px;
+    background: #EFEFEF;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap:4px;
+
+}
+
+img{
+    height: 26px;
+    width: 26px;
+    margin: 12px 0 0 0;
+}
+
+p{
+    position: absolute;
+    transform: translateY(225px);
+    width: 310px;
+    display: flex;
+    justify-content: center;
+}
+
+#hr{
+    width: 250px;
+    height: auto;
+    border-top: 1.5px solid #727070;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0 30px;
+}
+
+#enviar{
+    margin: 15px 0 0 0;
+    background-color: #310302;
+    color: white;
+    font-family: "Lexend Deca", sans-serif;
+    width: 227px;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 4px 4px rgba(0,0,0,25%);
+}
+
+#enviar:hover{
+    background-color: #4D4646;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+.produtivo, .improdutivo {
+    font-family: "Lexend Deca", sans-serif;
+    color: #323131;
+    border-radius: 5px;
+    margin: 0;
+    transform: translateY(5px);
+    height: 45px;
+    width: 310px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: row;
+    text-align: center;
+    font-size: 12.5px;
+    position:absolute;
+}
+
+.improdutivo {
+    background-color: #EAA9A9;
+}
+
+.produtivo{
+    background-color: #A9EAE3;
+}
+
+.status{
+   margin:0;
+   border:1px solid red;
+}
+
+@media (max-width: 600px) {
+    .container{
+        width: 345px;
+        height:55em;
+        transform: translateY(11em);
+    }
+
+    .card{
+        flex-flow: column wrap;
+        align-items: center;
+        width: 345px;
+        height: 790px;
+        gap: 3px;
+    }
+
+    .image{
+        height: 220px;
+        width: 330px;
+        margin: 8px 0 0 0;
+        box-shadow: none;
+    }
+
+    form{
+       width:100%;
+       display: flex;
+       align-items: center;
+    }
+
+    #container{
+      display: flex;
+      align-items:flex-start;
+      justify-content: center;
+    }
+
+    .uploads{
+        width: 290px;
+    }
+
+    #text{
+        width: 285px;
+    }
+
+    #ct{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-start;
+    }
+
+    #hr{
+        border-color: black;
+        transform: translateX(-9px);
+    }
+
+    h1{
+       transform: translate(-18px, 10px);
+    }
+
+    #enviar{
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .produtivo, .improdutivo {
+        width: 294px;
+        height: 50px;
+        text-align: center;
+    }
+>>>>>>> 26083729d0f88f0d7f090bbf38dc4d53468d0fdf
 }
